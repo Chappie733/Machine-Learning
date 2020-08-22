@@ -17,7 +17,7 @@ class KNN:
         self.y_train = y
 
     def predict(self, X):
-        predicted = [ self._predict(x) for x in X ]
+        predicted = [ y_train[self._predict(x)] for x in X ]
         return predicted
 
     def _predict(self, x):
