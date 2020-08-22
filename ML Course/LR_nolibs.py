@@ -18,7 +18,6 @@ class LinearRegression:
 
     def fit(self, X, y):
         n = len(X)
-        n_features = len(X[0])
         self.m = [0 for _ in X[0]]
         
         for _ in range(self.n_iters):
